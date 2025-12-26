@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Intrepid';
+  src: url('/fonts/Intrepid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Intrepid', sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+.lv-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  height: 88px;
+  display: flex;
+  align-items: center;
+}
+
+.lv-header__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5vw;
+  height: 80px;
+}
+
+.lv-header__row {
+  display: flex;
+  align-items: center;
+}
+
+.lv-header__menu {
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  padding: 0;
+  margin-right: 0.7vw;
+}
+
+.lv-header__menu .bars {
+  margin-right: 15px;
+}
+
+.lv-header__menu-label {
+  font-size: 14px;
+  margin-right: 1vw;
+  letter-spacing: 0.02em;
+}
+
+.lv-header__search-icon {
+  margin-right: 0.7vw;
+  cursor: pointer;
+}
+
+.lv-header__search {
+  border: none;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.lv-header__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lv-header__logo-img {
+  height: 25px;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+.lv-header__contact {
+  color: black;
+  font-size: 14px;
+  margin-right: 1vw;
+  text-decoration: none;
+}
+
+.lv-header__icon-heart {
+  color: black;
+  margin-right: 8px;
+}
+.lv-header__icon {
+  color: #222;
+  margin-right: 0.5vw;
+}
+
+.lv-header__bag-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.lv-header__bag-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #222;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-weight: bold;
+}
+
+.lv-header__menu svg {
+  font-size: 20px;
+}
+
+/* Footer styles */
+.lv-footer {
+  position: relative;
+  width: 100vw;
+  z-index: 999;
+  background: #fff;
+  color: #222;
+  border-top: 1px solid #eee;
+  padding: 0;
+  margin-top: 4rem;
+  min-height: 200px;
+  clear: both;
+}
+
+.lv-footer__main {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 8vw 2rem 8vw;
+  gap: 2vw;
+}
+
+.lv-footer__col {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.lv-footer__title {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.2rem;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.lv-footer__text {
+  font-size: 13px;
+  color: #222;
+  margin-bottom: 0.5px;
+  line-height: 1.5;
+}
+
+.lv-footer__col a {
+  color: #222;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 0.2rem;
+  transition: color 0.2s;
+}
+
+.lv-footer__col .underline {
+  text-decoration: underline;
+}
+
+.lv-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding: 1.2rem 8vw 0.5rem 8vw;
+  font-size: 1.05rem;
+}
+
+.lv-footer__delivery {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lv-footer__flag {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.lv-footer__country {
+  color: #222;
+  font-size: 13px;
+}
+
+.lv-footer__links {
+  display: flex;
+  gap: 2rem;
+}
+
+.lv-footer__links a {
+  color: #222;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.lv-footer__flag img {
+  height: 12px;
+  width: 16px;
+}
+
+.lv-footer__brand {
+  text-align: center;
+  padding: 3rem 0;
+  margin: 1.2rem 0 0.3rem 0;
+}
+
+.lv-footer__brand img {
+  height: 20px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .lv-header {
+    height: 56px;
+  }
+
+  .lv-header__top {
+    height: 10px;
+    padding: 0 2vw;
+    flex-direction: row;
+  }
+
+  .lv-header__left {
+    gap: 2vw;
+  }
+
+  .lv-header__menu {
+    width: 15px;
+  }
+
+  .lv-header__menu .bars {
+    margin-left: 10px;
+  }
+
+  .lv-header__menu-label {
+    display: none;
+  }
+
+  .lv-header__search-label {
+    display: none;
+  }
+
+  .lv-header__search {
+    width: 25px;
+    margin-left: 15px;
+    font-size: 0.95rem;
+    margin-right: 0.5vw;
+  }
+
+  .lv-header__center {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .lv-header__logo-img {
+    height: 18px;
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+
+  .lv-header__right {
+    gap: 1vw;
+    margin-right: 10px;
+  }
+
+  .lv-header__icon {
+    font-size: 1.1rem;
+  }
+
+  .lv-header__contact {
+    display: none;
+  }
+
+  .lv-header__icon-heart {
+    display: none;
+  }
+
+  .lv-header__bag-count {
+    font-size: 0.7rem;
+    padding: 1px 4px;
+  }
+
+  .lv-footer__main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 2vw 1rem 2vw;
+  }
+
+  .lv-footer__col {
+    min-width: 0;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    padding: 1.2rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .lv-footer__title {
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .lv-footer__text {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .lv-footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  .lv-footer__col a {
+    font-size: 0.95rem;
+  }
+
+  .lv-footer__bottom {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.7rem 2vw 0.3rem 2vw;
+    font-size: 0.95rem;
+  }
+
+  .lv-footer__delivery {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .lv-footer__brand img {
+    height: 22px;
+  }
+}

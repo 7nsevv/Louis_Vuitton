@@ -1,0 +1,557 @@
+.homeSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.homeLoop {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 1;
+}
+
+.homeLoopImg {
+  width: 100%;
+  height: 94%;
+  object-fit: cover;
+}
+
+.homeOverlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 94%;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.homeBottomOverlay {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 45px;
+  height: 70vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 5%, transparent 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.homeContent {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3vw;
+}
+
+.homeLabel {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.homeTitle {
+  font-size: 28px;
+  letter-spacing: 0.04em;
+}
+
+.homeBtn {
+  display: inline-block;
+  color: #fff;
+  background: none;
+  border: none;
+  border-radius: 2px;
+  padding: 0.7rem 2rem;
+  font-size: 15px;
+  text-decoration: underline;
+  margin-top: 0.2rem;
+}
+
+.homeControls {
+  position: absolute;
+  left: 2vw;
+  bottom: 3vw;
+  right: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  z-index: 3;
+}
+
+.homePause {
+  cursor: pointer;
+}
+
+.homeVolume {
+  cursor: pointer;
+}
+
+.maisonGridSection {
+  width: 100vw;
+  padding: 0 0 3rem 0;
+  background: #fff;
+}
+
+.maisonGridTitle {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+
+.maisonGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: start;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.maisonGridItem {
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+
+.maisonGridImg {
+  width: 104%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.2rem auto;
+}
+
+.maisonGridLabel {
+  font-size: 14px; 
+  margin-top: 0.5rem;
+}
+
+.maisonButtonsSection {
+  width: 100vw;
+  padding: 2rem 0 3rem 0;
+  background: #fff;
+  text-align: center;
+}
+
+.maisonButtonsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.maisonBtn {
+  background: #222;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.8rem 2.2rem;
+  cursor: pointer;
+}
+
+.maisonGridLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.SectionImg {
+  margin-top: 3em;
+  width: 100vw;
+  height: 200vh;
+}
+
+.SectionImg Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.SectionImgContent {
+  text-align: center;
+  color: black;
+  margin-top: 7vh;
+}
+
+.ImgLabel {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.ImgTitle {
+  font-size: 28px;
+  margin-bottom: 25px;
+  letter-spacing: 0.04em;
+}
+
+.ImgGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: start;
+  gap: 1rem;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.ImgGridImg {
+  width: 104%;
+  max-width: 320px;
+  background: linear-gradient(to bottom, rgba(209, 209, 209, 0.7) 0%, transparent 100%);
+  height: auto;
+  display: block;
+  margin: 0 auto 1.2rem auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ImgGridLabel {
+  font-size: 14px; 
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.ImgGridPrice {
+  font-size: 12px; 
+  color: gray;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.ImgGridLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.ImgBtn {
+  display: inline-block;
+  color: black;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 5rem;
+}
+
+.SectionImgDesktop {
+  width: 320px;
+  height: 264px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.SectionImgMobile, .SectionImgMobileBis {
+  display: none !important;
+}
+
+.SectionImgBis {
+  margin-top: 5rem;
+  width: 100vw;
+  height: 200vh;
+}
+
+.SectionImgBis Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.SectionImgContentBis {
+  text-align: center;
+  color: black;
+  margin-top: 7vh;
+}
+
+.ImgLabelBis {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.ImgTitleBis {
+  font-size: 28px;
+  margin-bottom: 25px;
+  letter-spacing: 0.04em;
+}
+
+.ImgGridBis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: start;
+  gap: 1rem;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.ImgGridImgBis {
+  width: 104%;
+  max-width: 320px;
+  background: linear-gradient(to bottom, rgba(209, 209, 209, 0.7) 0%, transparent 100%);
+  height: auto;
+  display: block;
+  margin: 0 auto 1.2rem auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ImgGridLabelBis {
+  font-size: 14px; 
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.ImgGridPriceBis {
+  font-size: 12px; 
+  color: gray;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.ImgGridLinkBis {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.ImgBtnBis {
+  display: inline-block;
+  color: black;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 5rem;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: #1a2946;
+  z-index: 3;
+  padding: 4px;
+}
+
+.SectionEnd {
+  width: 100%;
+  height: 100vh;
+  margin-top: 6rem;
+}
+
+.SectionEndContent {
+  text-align: center;
+}
+
+.EndTitle {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.EndLabel {
+  font-size: 14px;
+  color: gray;
+}
+
+.servicesSection {
+  background: #fff;
+  padding: 2.5rem 0 0 0;
+  text-align: center;
+}
+
+.servicesSubtitle {
+  font-size: 18px;
+  color: #222;
+  margin: 0.5rem 0 2.5rem 0;
+  letter-spacing: 0.01em;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.servicesItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+.servicesImg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.servicesTitle {
+  font-size: 17px;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+}
+
+.servicesLink {
+  font-size: 14px;
+  color: #222;
+  text-decoration: underline;
+  margin: 0 0.5rem;
+  font-family: inherit;
+}
+
+@media (max-width: 900px) {
+  .homeSection {
+    height: 80vh;
+  }
+
+  .homeLoopImg {
+    height: 100%;
+    width: 100vw;
+  }
+
+  .homeBottomOverlay {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 70vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 5%, transparent 30%);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .homeContent {
+    margin-bottom: 2vh;
+  }
+
+  .homeTitle {
+    font-size: 1.3rem;
+  }
+
+  .homeBtn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .homeControls {
+    font-size: 1.1rem;
+    left: 5vw;
+    right: 5vw;
+    bottom: 2vw;
+  }
+
+  .maisonGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+    width: 98vw;
+  }
+
+  .maisonGridImg {
+    width: 90%;
+  }
+
+  .maisonGridTitle {
+    margin-top: 3rem;
+    padding: 0 30px;
+    font-size: 20px;
+  }
+
+  .maisonButtonsGrid {
+    gap: 0rem;
+  }
+
+  .maisonBtn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .ImgGrid {
+    display: grid;
+    text-align: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 98vw;
+    margin: 0 auto;
+  }
+
+  .SectionImg {
+    height: 100%;
+  }
+
+  .SectionImg Img{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .SectionImgDesktop {
+    display: none !important;
+  }
+
+  .SectionImgMobile {
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  .ImgGridBis {
+    grid-template-columns: repeat(2, 1fr);
+    width: 98vw;
+  }
+  
+  .SectionImgDesktopBis {
+    display: none !important;
+  }
+
+  .SectionImgMobileBis {
+    display: block !important;
+    width: 98vw;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 98vw;
+  }
+
+  .servicesImg {
+    max-width: 98vw;
+  }
+
+  .SectionImgBis {
+    height: 190vh;
+  }
+
+  .SectionEnd {
+    display: none;
+  }
+}

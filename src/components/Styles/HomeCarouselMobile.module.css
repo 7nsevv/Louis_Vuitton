@@ -1,0 +1,115 @@
+.carouselContainer {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .EndTitle {
+    margin-bottom: 2rem;
+  }
+
+  .carouselContainer {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    background: #fff;
+  }
+
+  .carouselText {
+    font-size: 14px;
+    color: #555;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    line-height: 1.4em;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 0 calc(50% - 150px); /* moitié de la largeur max d’un item */
+  }
+
+  .carouselItem {
+    flex: 0 0 300px; /* largeur fixe pour un centrage parfait */
+    scroll-snap-align: center;
+    text-align: center;
+    margin: 0 15px; /* espace entre les items */
+    padding-bottom: 20px;
+  }
+
+  .carouselItem img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0;
+  }
+
+  .carouselItem h3 {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .carouselItem a {
+    font-size: 14px;
+    color: black;
+    text-decoration: underline;
+  }
+
+  .dots {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 18px;
+    height: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dot::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #999;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .dot.active::before {
+    width: 18px;
+    height: 6px;
+    background: black;
+    border-radius: 999px;
+  }
+
+  .carouselLinksRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .carouselLink {
+    font-size: 14px;
+    color: black;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    padding: 0.3em 0.5em;
+  }
+
+  .carouselLinkSecondary {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 0.3em 0.5em;
+  }
+}
